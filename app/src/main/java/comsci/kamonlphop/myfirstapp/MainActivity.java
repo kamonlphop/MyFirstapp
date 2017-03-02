@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,7 +58,19 @@ public class MainActivity extends AppCompatActivity {
         //create ListView
         MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titlestrings, shortStrings);
         listView.setAdapter(myAdapter);
-//ddd
+
+        //active when click list view link ไปหน้า detail เมื่อ เลือก item
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {//เมื่อ มีการclick ข้อมูลตำเเหน่งใด จะเก็บข้อมูลจากการclick
+               Intent intent = new Intent(MainActivity.this,Detail.class);
+                intent.putExtra("Title",titlestrings[position]);
+               intent.putExtra("Image",ints[position]);
+               intent.putExtra("Detail",detailStrings[position]);
+                startActivity(intent);
+
+            }
+        });
 
     }//end method oncreate , view คือ หน้าที่เราออกเเบบ
 
