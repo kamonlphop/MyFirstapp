@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         //create ListView
         MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titlestrings, shortStrings);
         listView.setAdapter(myAdapter);
-
+//ddd
 
     }//end method oncreate , view คือ หน้าที่เราออกเเบบ
 
