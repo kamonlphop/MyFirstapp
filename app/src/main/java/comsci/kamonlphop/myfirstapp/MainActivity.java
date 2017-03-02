@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
                                     R.drawable.traffic_18,
                                     R.drawable.traffic_19,
                                     R.drawable.traffic_20};
-    private String[] titlestrings,detailStrings;
+
+    private String[] titlestrings,detailStrings,shortStrings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +46,18 @@ public class MainActivity extends AppCompatActivity {
         titlestrings = getResources().getStringArray(R.array.title);
         detailStrings = getResources().getStringArray(R.array.detail);
 
+        //SudString detailString ตัดคำในdetailString เพื่อให้มีข้อความไม่เกิน 30 char
+        shortStrings = new String[detailStrings.length];//จองพื้นที่หน่วยความจำ shorstring
+        for (int i =0 ; i < detailStrings.length ; i++) {
+            shortStrings[i]= detailStrings[i].substring(0,29)+"...";//substring=methob ตัดคำใน(ตัวเลขแรก , จำนวนที่เราต้องการ)
+
+
+        }// end for
+
         //create ListView
-        MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints,titlestrings,detailStrings);
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titlestrings, shortStrings);
         listView.setAdapter(myAdapter);
+
 
     }//end method oncreate , view คือ หน้าที่เราออกเเบบ
 
