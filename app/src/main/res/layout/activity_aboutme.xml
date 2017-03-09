@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11"
+    android:onClick="clickface"
+    tools:context="comsci.kamonlphop.myfirstapp.aboutme">
+
+    <TextView
+        android:id="@+id/txtabout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_margin"
+        android:text="@string/abouteMe"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/h1" />
+
+    <ImageView
+        android:id="@+id/imgpro"
+        android:layout_width="@dimen/mu_picture"
+        android:layout_height="@dimen/mu_picture"
+        android:layout_below="@+id/txtabout"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/itme" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickBack"
+        android:text="@string/back" />
+
+    <LinearLayout
+        android:id="@+id/layprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/imgpro"
+        android:layout_margin="@dimen/my_margin"
+        android:background="#c8ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtname"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/txtnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtnumber"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/txtmajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtmajor"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/txtface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtface"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/txtfacename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtfacename"
+            android:textAlignment="center"
+            android:textSize="@dimen/h2"/>
+    </LinearLayout>
+
+</RelativeLayout>

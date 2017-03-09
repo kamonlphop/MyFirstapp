@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse("https://www.dlt.go.th/th/dlt-knowledge/view.php?_did=111"));// connect กับ ลิ้ง เว๊ป
         startActivity(intent);
         }//intent คือ การโอนข้อมูลจากที่นึ่งไปสู้ที่นึ่ง
+    public void clickaboutme(View view){
+        Intent intent = new Intent(MainActivity.this,aboutme.class);
+        startActivity(intent);
 
+    }
 
     }//main calss

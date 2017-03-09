@@ -4,4 +4,11 @@
     <string name="txtTitle">ป้ายจราจร</string>
     <string name="buttommoreinfo">More Info</string>
     <string name="abouteMe">About Me</string>
+    <string name="txtabout">about me</string>
+    <string name="back">back</string>
+    <string name="txtname">ชื่อ :  นาย กมลภพ หอเจริญ</string>
+    <string name="txtnumber">รหัส : 5711020660038</string>
+    <string name="txtmajor">สาขา : วิทยาการคอมพิวเตอร์</string>
+    <string name="txtface">facebook :</string>
+    <string name="txtfacename">kamonlphop hochareon</string>
 </resources>
