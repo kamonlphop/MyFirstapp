@@ -8,7 +8,7 @@
     android:background="@drawable/bg11">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="normal|bold"
         android:layout_alignParentRight="true"
@@ -21,20 +21,36 @@
         android:textAlignment="center"
         android:id="@+id/testview" />
 
-    <Button
-        android:text="@string/buttommoreinfo"
-        android:layout_height="wrap_content"
-        android:onClick="onClickMoreInfo"
-        android:id="@+id/btnMoreinfo"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent" />
-
     <ListView
+        android:id="@+id/livtafic"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnMoreinfo"
+        android:layout_above="@+id/layButton"
         android:layout_below="@+id/testview"
-        android:id="@+id/livtafic"
-        android:background="#c7ffffff"
-        android:layout_margin="@dimen/my_margin" />
+        android:layout_margin="@dimen/my_margin"
+        android:background="#c7ffffff" />
+
+    <LinearLayout
+        android:id="@+id/layButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMoreinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_weight="1"
+            android:onClick="onClickMoreInfo"
+            android:text="@string/buttommoreinfo" />
+
+        <Button
+            android:id="@+id/btnAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/abouteMe" />
+    </LinearLayout>
 </RelativeLayout>

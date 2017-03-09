@@ -2,5 +2,6 @@
     <string name="app_name">My Firstapp</string>
 
     <string name="txtTitle">ป้ายจราจร</string>
-    <string name="buttommoreinfo">ข้อมูลเพิ่มเติม</string>
+    <string name="buttommoreinfo">More Info</string>
+    <string name="abouteMe">About Me</string>
 </resources>

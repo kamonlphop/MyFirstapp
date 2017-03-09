@@ -30,6 +30,7 @@ public class Detail extends AppCompatActivity {
     }// end method oncreate
 
     public void clickBack(View view){// ปุ่ม click back กลับไป หน้า main activity
+
         finish();
     }
 }// end main class
