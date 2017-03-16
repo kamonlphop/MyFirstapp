@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg11"
-    android:onClick="clickface"
     tools:context="comsci.kamonlphop.myfirstapp.aboutme">
 
     <TextView
@@ -70,6 +69,7 @@
             android:id="@+id/txtface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="clickface"
             android:text="@string/txtface"
             android:textSize="@dimen/h2" />
 
@@ -79,7 +79,14 @@
             android:layout_height="wrap_content"
             android:text="@string/txtfacename"
             android:textAlignment="center"
-            android:textSize="@dimen/h2"/>
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/txttel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txttel"
+            android:textSize="@dimen/h2" />
     </LinearLayout>
 
 </RelativeLayout>
